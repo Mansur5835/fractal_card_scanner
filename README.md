@@ -61,7 +61,7 @@ minSdkVersion 21
 
 pubspac.yaml
 
-<img width="322" alt="Screen Shot 2022-09-02 at 14 18 09" src="https://user-images.githubusercontent.com/96409233/188107591-20a9ca3a-4d73-492c-be94-18954b39fb6f.png">
+<img width="291" alt="Screen Shot 2022-09-02 at 14 20 18" src="https://user-images.githubusercontent.com/96409233/188107988-60fd4eaf-a438-4344-a451-92b79890da7e.png">
 
 
 

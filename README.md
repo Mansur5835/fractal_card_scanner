@@ -4,13 +4,32 @@ Pub Version analysis Star on Github License: MIT
 
 <h1>UZ</h1>
 
-Bu package asos
-n UZCARD va HUMO plastik cartalarini scanner qilish uchun android✅ va iosga✅ ishlaydi.
+Bu package asosan UZCARD va HUMO plastik cartalarini scanner qilish uchun android✅ va iosga✅ ishlaydi.
 
 
 Foydalanish 
 
 Oldin dasturimizga firebaseni o\`rnatishimiz kerak bo\`ladi. Quyidagi havola orqali tanishib chiqing:   https://firebase.flutter.dev/docs/overview/
+
+
+Keyingi navbatda
+
+<h4>IOS</h4>
+
+Info.plis filega quyidagilarni qo\`shin
+
+
+'<key>NSCameraUsageDescription</key>
+<string>your usage description here</string>
+<key>NSMicrophoneUsageDescription</key>
+<string>your usage description here</string>'
+
+
+<h4>ANDROID </h4>
+
+android/app/build.gradle filega quyidagicha o\`zgartirish kiriting
+
+minSdkVersion 21
 
 
 

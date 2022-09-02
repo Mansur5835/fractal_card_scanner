@@ -68,7 +68,7 @@ pubspac.yaml
 
 Dart code:
 
-FractalCardModel fractalCardModel=await FractalScannerCard.startScan(context);
+<img width="665" alt="Screen Shot 2022-09-02 at 15 16 31" src="https://user-images.githubusercontent.com/96409233/188118623-b36fef25-6f5e-4571-aa0f-3227daba2924.png">
 
 
 

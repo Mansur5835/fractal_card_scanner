@@ -19,10 +19,7 @@ Keyingi navbatda
 Info.plis filega quyidagilarni qo\`shin
 
 
-'<key>NSCameraUsageDescription</key>
-<string>your usage description here</string>
-<key>NSMicrophoneUsageDescription</key>
-<string>your usage description here</string>'
+<img width="437" alt="Screen Shot 2022-09-02 at 14 09 51" src="https://user-images.githubusercontent.com/96409233/188106128-87ab5f65-78b2-4250-a411-2fa5a7fff3d4.png">
 
 
 <h4>ANDROID </h4>
@@ -37,9 +34,29 @@ minSdkVersion 21
 
 fractal_card_scanner package for android✅ and ios✅ to scan cards.
 
+
 Getting Started 
 
 First, we need to install firebase in our program. Check out the following link: https://firebase.flutter.dev/docs/overview/
+
+
+<h4>IOS</h4>
+
+Add the following to the info.plis file
+
+<img width="437" alt="Screen Shot 2022-09-02 at 14 09 51" src="https://user-images.githubusercontent.com/96409233/188106128-87ab5f65-78b2-4250-a411-2fa5a7fff3d4.png">
+
+
+<h4>ANDROID </h4>
+
+Change the android/app/build.gradle file as follows
+
+minSdkVersion 21
+
+
+
+
+<h2>Installation (o`rnatish) </h2>
 
 
 pubspac.yaml

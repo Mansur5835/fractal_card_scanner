@@ -15,7 +15,7 @@ class FractalScannerCardView extends StatefulWidget {
   final String? title;
   final String? notFoundCardLabel;
   final Widget confirmationIcon;
-  final Widget scannnerIcon;
+  final Widget scannerIcon;
   final Widget? appIcon;
   final Color? primaryColor;
   final Image cardImage;
@@ -27,7 +27,7 @@ class FractalScannerCardView extends StatefulWidget {
       this.primaryColor,
       required this.confirmationIcon,
       required this.cardImage,
-      required this.scannnerIcon})
+      required this.scannerIcon})
       : super(key: key);
 
   @override
@@ -234,7 +234,7 @@ class _FractalScannerCardViewState extends State<FractalScannerCardView>
                                       icon: SizedBox(
                                         width: 40,
                                         height: 40,
-                                        child: widget.scannnerIcon,
+                                        child: widget.scannerIcon,
                                       ),
                                     ),
                                   ),

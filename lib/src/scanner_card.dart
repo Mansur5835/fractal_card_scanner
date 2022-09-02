@@ -10,14 +10,14 @@ class FractalScannerCard {
       required Image cardImage,
       Color? primaryColor,
       required Widget confirmationIcon,
-      required Widget scannnerIcon}) async {
+      required Widget scannerIcon}) async {
     FractalCardModel? cardModel = await Navigator.push(
         context,
         MaterialPageRoute(
             builder: ((context) => FractalScannerCardView(
                 title: title,
                 notFoundCardLabel: notFoundCardLabel,
-                scannnerIcon: scannnerIcon,
+                scannerIcon: scannerIcon,
                 confirmationIcon: confirmationIcon,
                 appIcon: appIcon,
                 cardImage: cardImage,

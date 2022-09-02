@@ -205,14 +205,15 @@ class _FractalScannerCardViewState extends State<FractalScannerCardView>
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceEvenly,
                                 children: [
-                                  scanError
-                                      ? Text(
-                                          widget.notFoundCardLabel ??
-                                              "Karta malumotlari topilmadi",
-                                          style: const TextStyle(
-                                              color: Colors.red),
-                                        )
-                                      : const SizedBox.shrink(),
+                                  if(scanError)...{
+                                    Text(
+                                      widget.notFoundCardLabel ??
+                                          "Karta malumotlari topilmadi",
+                                      style: const TextStyle(
+                                          color: Colors.red),
+                                    )
+                                  },
+
                                   Container(
                                     width: 60,
                                     height: 60,

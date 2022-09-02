@@ -61,8 +61,7 @@ minSdkVersion 21
 
 pubspac.yaml
 
- dependencies:
-    fractal_card_scanner 1.0.0
+<img width="322" alt="Screen Shot 2022-09-02 at 14 18 09" src="https://user-images.githubusercontent.com/96409233/188107591-20a9ca3a-4d73-492c-be94-18954b39fb6f.png">
 
 
 

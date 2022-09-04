@@ -61,9 +61,7 @@ minSdkVersion 21
 
 pubspac.yaml
 
-<img width="520" alt="raycast-untitled (1)" src="https://user-images.githubusercontent.com/96409233/188120326-3fc426a4-31f0-43d5-a4d4-893fa1625b9e.png">
-
-
+<img width="520" alt="raycast-untitled (2)" src="https://user-images.githubusercontent.com/96409233/188303728-56952446-b8e6-449d-bcc3-54d1f36f9b63.png">
 
 
 

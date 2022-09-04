@@ -1,6 +1,6 @@
 name: fractal_card_scanner
 description: A Flutter package uses the google_mlkit_text_recognition and camera packages. This will scan the package cards.
-version: 1.0.4
+version: 1.0.6
 homepage: https://github.com/Mansur5835/fractal_card_scanner
 
 environment:
@@ -26,8 +26,8 @@ dev_dependencies:
 flutter:
 
   # To add assets to your package, add an assets section, like this:
-  assets:
-    - assets/icons/
+  # assets:
+  #   - assets/icons/
   #
   # For details regarding assets in packages, see
   # https://flutter.dev/assets-and-images/#from-packages

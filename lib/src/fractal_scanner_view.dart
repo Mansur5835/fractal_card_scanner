@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:isolate';
 
 import 'package:camera/camera.dart';
 import 'package:flutter/foundation.dart';
@@ -48,7 +49,7 @@ class _FractalScannerCardViewState extends State<FractalScannerCardView>
     super.initState();
   }
 
-  Future<void> _getCameras() async {
+  _getCameras() async {
     cameras = await availableCameras();
 
     cameraController = CameraController(
@@ -62,6 +63,7 @@ class _FractalScannerCardViewState extends State<FractalScannerCardView>
       if (!mounted) {
         return;
       }
+
       _startImageStream();
     }).catchError((er) {
       if (kDebugMode) {
@@ -205,15 +207,13 @@ class _FractalScannerCardViewState extends State<FractalScannerCardView>
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceEvenly,
                                 children: [
-                                  if(scanError)...{
+                                  if (scanError) ...{
                                     Text(
                                       widget.notFoundCardLabel ??
                                           "Karta malumotlari topilmadi",
-                                      style: const TextStyle(
-                                          color: Colors.red),
+                                      style: const TextStyle(color: Colors.red),
                                     )
                                   },
-
                                   Container(
                                     width: 60,
                                     height: 60,

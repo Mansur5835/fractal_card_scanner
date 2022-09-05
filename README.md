@@ -72,6 +72,14 @@ Dart code:
 
 
 
+Example App GitHub
+https://github.com/Mansur5835/card_scanner_example 
+
+
+https://user-images.githubusercontent.com/96409233/188492958-30183b1b-9459-421c-b9eb-92aa9d359454.MP4
+
+
+
 
 
 

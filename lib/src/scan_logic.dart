@@ -40,13 +40,13 @@ mixin ScanLogic {
 
   Future<void> timerForScanTime(Function setState) async {
     timer = Timer.periodic(const Duration(seconds: 1), (t) {
-      if(isDone.contains(false)){
+      if (isDone.contains(false)) {
         timerCout++;
-      } else{
-        timerCout=0;
+      } else {
+        timerCout = 0;
       }
 
-      if (timerCout == 10) {
+      if (timerCout == 5) {
         scanError = true;
         slideAnimbationController.forward();
         _stopStream();

@@ -19,8 +19,12 @@ Keyingi navbatda
 Info.plis filega quyidagilarni qo\`shin
 
 
-<img width="437" alt="Screen Shot 2022-09-02 at 14 09 51" src="https://user-images.githubusercontent.com/96409233/188106128-87ab5f65-78b2-4250-a411-2fa5a7fff3d4.png">
-
+```yalm
+<key>NSCameraUsageDescription</key>
+<string>your usage description here</string>
+<key>NSMicrophoneUsageDescription</key>
+<string>your usage description here</string>
+```
 
 <h4>ANDROID </h4>
 
@@ -44,7 +48,12 @@ First, we need to install firebase in our program. Check out the following link:
 
 Add the following to the info.plis file
 
-<img width="437" alt="Screen Shot 2022-09-02 at 14 09 51" src="https://user-images.githubusercontent.com/96409233/188106128-87ab5f65-78b2-4250-a411-2fa5a7fff3d4.png">
+```yalm
+<key>NSCameraUsageDescription</key>
+<string>your usage description here</string>
+<key>NSMicrophoneUsageDescription</key>
+<string>your usage description here</string>
+```
 
 
 <h4>ANDROID </h4>
@@ -61,14 +70,58 @@ minSdkVersion 21
 
 pubspac.yaml
 
-<img width="520" alt="raycast-untitled (4)" src="https://user-images.githubusercontent.com/96409233/188310905-7ed6f1c9-03a9-4314-a4bf-2beb89be4576.png">
+```yalm
+dependencies:
+  flutter:
+    sdk: flutter
 
+  cupertino_icons: ^1.0.2
+  firebase_core: ^1.21.1
+  fractal_card_scanner: ^1.0.8
+  ```
 
 
 
 Dart code:
 
-<img width="696" alt="raycast-untitled" src="https://user-images.githubusercontent.com/96409233/188119929-eb44289b-c9b3-4032-96c9-8c5a21acb337.png">
+```dart
+     FractalCardModel? fractalCardModel = await FractalScannerCard.startScan(
+                  context,
+                  primaryColor: AppColors.primaryColor,
+                  cardImage: Image.asset(
+                    "assets/images/banners/card-back.jpg",
+                    fit: BoxFit.cover,
+                  ),
+                  confirmationIcon: Container(
+                    width: 60,
+                    height: 60,
+                    alignment: Alignment.center,
+                    decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(1212212)),
+                    child: Image.asset(
+                      "assets/images/icons/tick.png",
+                      color: AppColors.primaryColor,
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                  scannerIcon: Container(
+                    width: 60,
+                    height: 60,
+                    alignment: Alignment.center,
+                    decoration: BoxDecoration(
+                        color: AppColors.primaryColor,
+                        borderRadius: BorderRadius.circular(1212212)),
+                    child: Image.asset(
+                      "assets/images/icons/scanner.png",
+                      color: Colors.white,
+                      fit: BoxFit.cover,
+                      width: 30,
+                      height: 30,
+                    ),
+                  ),
+                );
+```
 
 
 
